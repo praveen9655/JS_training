@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <!-- JavaScript Can Change HTML Content -->
+    <h2>Welcome to js</h2>
+    <p id="demo">
+        JavaScript can change this content
+    </p>
+    <Button type="button" onclick='document.getElementById("demo").innerHTML="Hello JS"'>Change it</Button>
+    <hr>
+
+    <!-- js change the img scr -->
+    <h2>Js can change the img scr</h2>
+
+    <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on</button>
+    <img id="myImage" src="/img/pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
+    <hr>
+
+    <!-- JavaScript Can Change HTML Styles (CSS) -->
+    <h2 id="styCh" style="color:chartreuse;">JavaScript Can Change HTML Styles (CSS)</h2>
+    <button type="button" onclick="document.getElementById('styCh').style.color='blue'"> click me</button>
+    <hr>
+
+    <!-- The <script> Tag -->
+        <h2>Js in body</h2>
+        <p id="jsBD"></p>
+        <script>
+            document.getElementById('jsBD').innerHTML ='my first script'
+        </script>
+    <hr>
+    <!-- using external Js -->
+    <h1>using external Js</h1>
+    <h2 id="styC" style="color:chocolate">JavaScript Can Change HTML Styles (CSS)</h2>
+    <button type="button" onclick="myFuc()"> click me</button>
+    <hr>
+    <!-- Using document.write() -->
+    <button type="button" onclick="document.write('Successfully cleared all data')">Clear all</button>
+</body>
+</html>

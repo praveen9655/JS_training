@@ -45,9 +45,9 @@
     <!-- Using document.write() -->
     <button type="button" onclick="document.write('Successfully cleared all data')">Clear all</button>
     <!-- Window.alert -->
-    <script>
+    <!-- <script>
         window.alert('Hi folks this my js training')
-    </script>
+    </script> -->
     <!-- Use of console.log -->
     <script>
         console.log('this was print by console.log')
@@ -60,6 +60,17 @@
     <!-- time -->
     <button onclick="document.getElementById('demo2').innerHTML=Date()">Time is?</button>
     <P id="demo2" ></P>
+    <!-- calculator -->
+    <section style="min-height: 100vh;">
+       <form action="">
+            number 1: <input type="text" id="one1" /> <br>
+            number 2: <input type="text" id="one2" /> <br>
+            <input type="button" onclick="mult()" value="multiply"/>
+            <input type="button" onclick="divi()" value="divide">
+           <h2>The Result</h2>
+           <h1 id="ans"></h1>
+       </form>
+    </section>
 
 </body>
 </html>

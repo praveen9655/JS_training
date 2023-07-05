@@ -75,3 +75,14 @@ console.log("Current time is : " + hour +" "+ prepand +" "+ minute +":"+ second)
 let s1 = 34;
 let age = (s1>=18)? "eligible for voting" : "not eligible for voting";
 console.log(age);
+
+function mult(){
+ let numb1 = document.getElementById('one1').value;
+ let numb2 = document.getElementById('one2').value;
+ document.getElementById('ans').innerHTML = numb1*numb2;
+}
+function divi(){
+    let numb1 = document.getElementById('one1').value;
+    let numb2 = document.getElementById('one2').value;
+    document.getElementById('ans').innerHTML = numb1/numb2;
+}
